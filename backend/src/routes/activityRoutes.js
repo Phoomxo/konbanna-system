@@ -1,11 +1,12 @@
-import express from "express";
-import {
+const express = require("express");
+const {
   getAllActivities,
   getActivityById,
   createActivity,
   updateActivity,
   deleteActivity,
-} from "../controllers/activityController.js";
+} = require("../controllers/activityController.js");
+
 
 const router = express.Router();
 
@@ -15,4 +16,5 @@ router.post("/", createActivity);
 router.put("/:id", updateActivity);
 router.delete("/:id", deleteActivity);
 
-export default router;
+module.exports = router;
+

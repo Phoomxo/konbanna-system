@@ -185,19 +185,19 @@ const ActivityDetail = () => {
                 onChange={handleDateChange}
                 value={selectedDate}
               // tileDisabled={ async ({ date }) => {
-              //   const localDate = new Date(date);
-              //   const isoString = localDate.toISOString(); // แปลงเป็นรูปแบบ UTC
+              //   import localDate = new Date(date);
+              //   import isoString = localDate.toISOString(); // แปลงเป็นรูปแบบ UTC
 
-              //   const response = await getBookings();
-              //   const filteredBookingTime = response.data.filter(
+              //   import response = await getBookings();
+              //   import filteredBookingTime = response.data.filter(
               //     (booked) =>
               //       selectedRoom === booked.roomId && booked.bookingDate === isoString // ต้อง return true หรือ false
               //   );
               //   if (type === "AllDay") {
-              //     const isBooked = filteredBookingTime.some(b => b.bookingDate === isoString);
+              //     import isBooked = filteredBookingTime.some(b => b.bookingDate === isoString);
 
               //     if (isBooked) {
-              //       const block = filteredBookingTime.find(b => b.bookingDate === isoString)?.length || 0;
+              //       import block = filteredBookingTime.find(b => b.bookingDate === isoString)?.length || 0;
 
               //       return block >= activity.maxPeople;
               //     }

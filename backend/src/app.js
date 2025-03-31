@@ -1,13 +1,13 @@
-import express from "express";
-import dotenv from "dotenv";
-import cors from "cors";
-import prisma from "./config/db.js"; // นำ Prisma Client มาใช้
-import authRoutes from "./routes/authRoutes.js";
-import userRoutes from "./routes/userRoutes.js";
-import placeRoutes from "./routes/placeRoutes.js";
-import activityRoutes from "./routes/activityRoutes.js";
-import bookingRoutes from "./routes/bookingRoutes.js";
-import roomRoutes from "./routes/roomRoutes.js";
+const express = require("express");
+const dotenv = require("dotenv");
+const cors = require("cors");
+const prisma = require("./config/db.js"); // นำ Prisma Client มาใช้
+const authRoutes = require("./routes/authRoutes.js");
+const userRoutes = require("./routes/userRoutes.js");
+const placeRoutes = require("./routes/placeRoutes.js");
+const activityRoutes = require("./routes/activityRoutes.js");
+const bookingRoutes = require("./routes/bookingRoutes.js");
+const roomRoutes = require("./routes/roomRoutes.js");
 
 dotenv.config();
 
@@ -36,4 +36,4 @@ app.get("/", async (req, res) => {
   }
 });
 
-export default app;
+module.exports = app;
