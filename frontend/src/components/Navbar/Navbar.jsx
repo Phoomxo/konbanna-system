@@ -38,7 +38,7 @@ export default function Navbar() {
     <div className="navbar bg-green-900">
       <div className="flex-1">
         <Link to="/" className="btn btn-ghost text-4xl" style={{color:"#fff"}}>
-          Booking System
+          konbanna System
         </Link>
       </div>
       <div className="flex-none">
